@@ -1,16 +1,13 @@
-import React from 'react';
-import { EdgeProps, } from 'reactflow';
+import React from "react";
+import { EdgeProps } from "reactflow";
 
-export function FundEdge(
-    {
-        sourceX,
-        sourceY,
-        targetX,
-        targetY,
-        sourcePosition,
-        targetPosition,
+export function FundEdge({
+  sourceX,
+  sourceY,
+  targetX,
+  targetY,
+  sourcePosition,
+  targetPosition,
 
-        markerEnd,
-    }: EdgeProps) {
-
-}
+  markerEnd,
+}: EdgeProps) {}
