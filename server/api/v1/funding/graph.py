@@ -9,9 +9,12 @@ route = APIRouter(
     prefix="/graph",
 )
 
+f = open('data.json')
+data = json.load(f)
 
 @route.get("/{chain}/{address}", response_model=FundGraphResponse)
 def get_address_graph(
         address: str,
         chain: ChainId,
 ):
+    return { "edges": data }
