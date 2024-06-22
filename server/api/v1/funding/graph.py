@@ -17,4 +17,8 @@ def get_address_graph(
         address: str,
         chain: ChainId,
 ):
-    return { "edges": data }
+    filtered_edges = list(filter(lambda obj: 
+        (obj['source']['address'] == address and obj['source']['chain_id'] == chain) or
+        (obj['dest']['address'] == address and obj['dest']['chain_id'] == chain), data))
+    
+    return { "edges": filtered_edges }

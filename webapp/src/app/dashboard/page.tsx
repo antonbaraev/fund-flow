@@ -8,7 +8,7 @@ import Loadable from "../components/loadable/Loadable";
 import noop from "lodash/noop";
 
 const sourceChainAddress: ChainAddress = {
-  address: "0x39cd23328b5ba304ae70bb0c1866e224f727f962",
+  address: "0x4484656e7aed645c15ff01c6a4a857f01a604bb6",
   chainId: ChainIds.EthereumMainnet,
   type: AddressType.EOA,
 };
