@@ -3,7 +3,6 @@
 import { AddressType, ChainAddress, ChainIds } from "@/app/types/chainAddress";
 import { useFundsFlow } from "./hooks/useFundsFlow";
 import FlowChart from "../components/charts/FlowChart";
-import { Spinner } from "../components/spinner/Spinner";
 import Loadable from "../components/loadable/Loadable";
 import noop from "lodash/noop";
 
